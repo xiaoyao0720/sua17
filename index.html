@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="https://xiaoyao0720.github.io/sua17/styles/main.css">
     <script src="https://xiaoyao0720.github.io/sua17/media/js/valine.min.js"></script>
     <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-    <meta name="description" content="温故而知新" />
+    <meta name="description" content="只因为太喜欢,所以更害怕失去。1" />
     <meta http-equiv="x-pjax-version" content="v123">
-    <title>Gridea</title>
+    <title>苏十七(๑•̀ㅂ•́)و✧</title>
 </head>
 
 
@@ -88,10 +88,10 @@
                         src='https://xiaoyao0720.github.io/sua17/media/images/music.png' alt="音乐播放器" class="musicbtn"></i></a>
         </div>
         <div class="avatar-border">
-            <img src="https://xiaoyao0720.github.io/sua17/images/avatar.png?v=1621843178126" class="avatar">
+            <img src="https://xiaoyao0720.github.io/sua17/images/avatar.png?v=1621843575382" class="avatar">
         </div>
-        <div class="sitename">Gridea</div>
-        <span class="description" data-text='["温故而知新"]'>&nbsp;</span>
+        <div class="sitename">苏十七(๑•̀ㅂ•́)و✧</div>
+        <span class="description" data-text='["只因为太喜欢,所以更害怕失去。1"]'>&nbsp;</span>
         <div class="siteinfocontainer">
             <span class="siteinfo">文章</span>
             <span class="siteinfo">标签</span>
@@ -103,7 +103,7 @@
         
         <div class="search">
             <!-- <input type="text" class="search-input" placeholder="标题搜索(●'◡'●)" /> -->
-            <input type="text" class="search-input" placeholder="我想找点啥呢？">
+            <input type="text" class="search-input" placeholder="标题搜索 ⚆_⚆ つ♡">
             <div class="search-results"></div>
         </div>
         
@@ -163,13 +163,13 @@
         
 
         
-            
         <div class="mchocie description">
-            <a data-pjax href="https://xiaoyao0720.github.io/sua17/friends" class="menubutton" style="margin-right: 15px;">
-                <i><img class="icon menuicon" src="" alt="友人帐"></i>&nbsp;<span data-text="友人帐">友人帐</span>
+            <a data-pjax href="https://xiaoyao0720.github.io/sua17/talk" class="menubutton" style="margin-right: 15px;">
+                <i><img class="icon menuicon" src="" alt="说说"></i>&nbsp;<span data-text="说说">说说</span>
             </a>
         </div>
         
+            
         
         <div class="mchocie description">
             <a data-pjax href="#terrestrial" id="fog_go" class="open-popup menubutton" style="margin-right: 15px;">
@@ -209,13 +209,13 @@
                 
                 <div id="sitegotimeDate">载入天数...</div>
                 <div id="sitegotimes">载入时分秒...</div>
-                <div id="cussitetime" style="display:none">05/02/2021</div>
+                <div id="cussitetime" style="display:none">05/24/2021</div>
                 
             </div>
             <div>
                 
             </div>
-            <div class="copyright" style="color:white;text-align: center;">Copyright © 2020  备案号: 鄂ICP备...号
+            <div class="copyright" style="color:white;text-align: center;">Copyright © 2020
             </div>
         </div>
 
@@ -288,12 +288,12 @@
             $(".flycontainer").css("display","flex");
             $(".popup").fadeOut(500)
             await sleep(2000);
-            var sitename = "Gridea";
+            var sitename = "苏十七(๑•̀ㅂ•́)و✧";
             getFogUser(sitename);
         }
 
         function fog_goregis(){
-            var sitename = "Gridea";
+            var sitename = "苏十七(๑•̀ㅂ•́)و✧";
             var siteurl = "https://xiaoyao0720.github.io/sua17";
             regisFogUser(sitename,siteurl);
         }
@@ -795,7 +795,7 @@ menulist.eq(i).show();
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a data-pjax class="navbar-brand" href="https://xiaoyao0720.github.io/sua17">Gridea&nbsp;&nbsp;|</a>
+      <a data-pjax class="navbar-brand" href="https://xiaoyao0720.github.io/sua17">苏十七(๑•̀ㅂ•́)و✧&nbsp;&nbsp;|</a>
       <span class="navbar-brand mbapspan"><i id="mbaplayer" class="fa fa-play-circle-o" aria-hidden="true"
           style="font-size: 28px;top: 12px;position: absolute;" onclick="aplayerPlay();"></i></span>
     </div>
@@ -837,10 +837,9 @@ menulist.eq(i).show();
         
         
         
-          
-        <li><a data-pjax href="https://xiaoyao0720.github.io/sua17/friends">友链</a></li>
-
+        <li><a data-pjax href="https://xiaoyao0720.github.io/sua17/talk">说说</a></li>
         
+          
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -884,13 +883,13 @@ menulist.eq(i).show();
                         <!-- 移动端欢迎页 -->
 <div class="welcome">
     <div class="avatar-border">
-        <img src="https://xiaoyao0720.github.io/sua17/images/avatar.png?v=1621843178126" class="avatar">
+        <img src="https://xiaoyao0720.github.io/sua17/images/avatar.png?v=1621843575382" class="avatar">
     </div>
     <span class="mobiledescribtion"></span>
 </div>
 
 
-<div id="mobilebgurl" style="display:none">\media\images\custom-mobilebgimage.jpg</div>
+<div id="mobilebgurl" style="display:none">/media/images/mobilebgimg.jpg</div>
 
 <script>
     var welcome = $('.welcome');
@@ -899,7 +898,7 @@ menulist.eq(i).show();
         bgurl = bgurl.replace("\\", "/");
     welcome.css("background", "url('" + bgurl + "')");
     var mobiledes = document.querySelector(".mobiledescribtion");
-    var text = "温故而知新";
+    var text = "只因为太喜欢,所以更害怕失去。1";
     // 当前显示第几个字
     var mobilecharIndex = 1;
     // 每个字显示间隔默认是500毫秒
@@ -996,8 +995,6 @@ menulist.eq(i).show();
                     <div :class="post.elegcontainer">
                         <img :src="post.feature" alt="" :class="post.imgclass">
                         
-                        <img class="eleg-swordsmen-left" src="https://xiaoyao0720.github.io/sua17/media/images/swordsmenleft.webp" alt="">
-                        
                         <div class="eleg-info">
                             <span class="eleg-title">{{post.title}}</span>
                             <div style="margin-top:15px;">
@@ -1031,8 +1028,6 @@ menulist.eq(i).show();
                                 <a :href="post.link" class="eleg-btn" data-pjax>阅读全文</a>
                             </div>
                         </div>
-                        
-                        <img class="eleg-swordsmen" src="https://xiaoyao0720.github.io/sua17/media/images/swordsmen.webp" alt="">
                         
                         <img :src="post.feature" alt="" :class="post.imgclass">
                     </div>
@@ -1172,6 +1167,69 @@ menulist.eq(i).show();
             <canvas id="live2d" width="240" height="250" class="live2d"></canvas>
         </div>
     </div>
+        
+            <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+</head>
+
+<body>
+    <div class="miniMode">
+        <meting-js id="myaplayer" server="netease" type="playlist" fixed="true" order="default" muted="muted">
+        </meting-js>
+    </div>
+</body>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+<script>
+    function aplayerInit() {
+        var aplayerid = "8006367698";
+        var aplayerserver = "tencent";
+        var aplayerorder = "random";
+        var aplayerautoplay = "true";
+        var aplayer = $("#myaplayer");
+        aplayer.attr("server", aplayerserver);
+        aplayer.attr("id", aplayerid);
+        aplayer.attr("order", aplayerorder);
+        if (aplayerautoplay == "true")
+            aplayer.attr("autoplay", "true");
+    }
+    aplayerInit();
+</script>
+
+<script src="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/js/Aplayer.min.js"></script>
+<!-- require MetingJS -->
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+<script>
+    function aplayerbtnInit() {
+        var player = document.querySelectorAll('meting-js')[0].aplayer;
+        if(player==undefined)return false;
+        player.lrc.hide();
+        var mbabtn = $("#mbaplayer");
+        if (player.paused == false) {
+            mbabtn.removeClass("fa-play-circle-o");
+            mbabtn.addClass("fa-pause-circle");
+        } else {
+            mbabtn.addClass("fa-play-circle-o");
+            mbabtn.removeClass("fa-pause-circle");
+        }
+    }
+
+    function aplayerPlay() {
+        var player = document.querySelectorAll('meting-js')[0].aplayer;
+        var mbabtn = $("#mbaplayer");
+        if (player.paused == true) {
+            player.play();
+            mbabtn.removeClass("fa-play-circle-o");
+            mbabtn.addClass("fa-pause-circle");
+        } else {
+            player.pause();
+            mbabtn.addClass("fa-play-circle-o");
+            mbabtn.removeClass("fa-pause-circle");
+        }
+    }
+</script>
         
     <div id="domainname" style="display:none">https://xiaoyao0720.github.io/sua17
         </div>

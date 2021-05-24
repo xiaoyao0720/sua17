@@ -3105,25 +3105,9 @@ a {
 }
 
       .sitename {
-        color: #3b5bdb;
+        color: #364fc7;
       }
     
-        .describtion {
-          color: #e03131;
-        }
-      
-        .menubutton {
-          color: #5c7cfa;
-        }
-
-        .menubutton:visited{
-          color: #5c7cfa;
-        }
-      
-        .navbar-inverse{
-          background-color: #99e9f2;
-        }
-      
         .sitename{
           font-family: 微软雅黑;
         }
