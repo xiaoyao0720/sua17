@@ -2,21 +2,186 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <meta name="description" content="导言：近日，一则“某剧组在南大校园取景，当红明星遭冷遇”的消息引发关注，舆论为南京大学学子们的“反常”表现点赞。如果这则新闻与营销造势无关，那么青年学生与娱乐明星之间的这份“疏离感”，倒给人更多思考和讨论的空间。
+
+你拍你的戏我读我的书，这..." />
+    <meta name="keywords" content="公务员必备,洪荒之声" />
     <link rel="stylesheet" href="https://xiaoyao0720.github.io/sua17/media/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/css/live2d.css">
     <link rel="stylesheet" href="https://xiaoyao0720.github.io/sua17/styles/main.css">
-    <meta name="description" content="只因为太喜欢,所以更害怕失去。1" />
-    <link rel="stylesheet" href="https://xiaoyao0720.github.io/sua17/media/css/font-awesome.css">
-    <title>苏十七(๑•̀ㅂ•́)و✧</title>
+    <!-- 代码渲染风格css -->
+    
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/default.min.css">
+    
+    <!-- 代码高亮插件 -->
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js"></script>
+    <!-- 代码复制插件 -->
+    <script src="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/js/clipboard.min.js"></script>
+    <!-- live2d插件 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/css/live2d.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet">
+    <!-- 数学公式 -->
+    
+    <title>明星在南大校园拍戏遇冷，传递了正确的价值取向</title>
+
+    <!-- 大纲索引css调整 -->
+    
+    <style>
+        .markdownIt-TOC {
+            margin-left: 28%;
+            padding-left: 2px;
+            width: 80%;
+        }
+
+        .markdownIt-TOC li {
+            padding-left: 8%;
+        }
+    </style>
+    
 </head>
+
 <body>
+    <div id="landlord">
+        <div class="message" style="opacity:0"></div>
+        <canvas id="live2d" width="240" height="250" class="live2d"></canvas>
+    </div>
+    <div id="domainname" style="display:none">https://xiaoyao0720.github.io/sua17</div>
     <div id="content">
-        <div class="nav-large">
-            <div class="row">
-                <!--------------- pc端菜单栏👇 ---------------->
-                <div class="side"><head>
+        <div>
+            <!----------- 移动端导航栏👇 ----------------->
+            <div id="bar">
+                <head>
+  <!-- 引入Bootstrap核心样式文件 -->
+  <link rel="stylesheet" href="https://xiaoyao0720.github.io/sua17/media/css/bootstrap.min.css">
+</head>
+<style>
+  .navmobile {
+    z-index: 15;
+    max-height: 40vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  @media screen and (max-width: 1200px) {
+    .navbar {
+      max-width: 100vw;
+    }
+  }
+
+  @media screen and (max-width:1200px) and (min-width: 768px) {
+    @media (min-width: 768px) {
+      .navbar-nav {
+        float: right;
+        margin: 0;
+      }
+    }
+  }
+
+  @media screen and (max-width:768px) {
+    .mbapspan {
+      padding: 0;
+    }
+  }
+</style>
+<div class="pjaxloading"  onclick="pjaxloadingClose()">
+  <div class="loadingbackground"></div>
+  <div id="loading">
+    <div class="loading">
+    </div>
+  </div>
+</div>
+<nav class="navbar navbar-inverse navbar-fixed-top navmobile">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barmenu"
+        aria-expanded="false" id="barbutton">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a data-pjax class="navbar-brand" href="https://xiaoyao0720.github.io/sua17">苏十七(๑•̀ㅂ•́)و✧&nbsp;&nbsp;|</a>
+      <span class="navbar-brand mbapspan"><i id="mbaplayer" class="fa fa-play-circle-o" aria-hidden="true"
+          style="font-size: 28px;top: 12px;position: absolute;" onclick="aplayerPlay();"></i></span>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="barmenu">
+      <ul class="nav navbar-nav">
+        
+        
+        <li>
+          <a data-pjax href="/">
+            首页
+          </a>
+        </li>
+        
+        
+        
+        <li>
+          <a data-pjax href="/archives">
+            归档
+          </a>
+        </li>
+        
+        
+        
+        <li>
+          <a data-pjax href="/post/about">
+            关于
+          </a>
+        </li>
+        
+        
+        
+        <li><a data-pjax href="https://xiaoyao0720.github.io/sua17/talk">说说</a></li>
+        
+          
+        <li><a data-pjax href="https://xiaoyao0720.github.io/sua17/friends">友链</a></li>
+
+        
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+
+  <!-- 引入jQuery核心js文件 -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+  <script>
+    let btstate = false;
+    var bt = $("#barbutton");
+    var bm = $("#barmenu");
+    bt.click(function () {
+      dropdown();
+    })
+    function dropdown() {
+      console.log(btstate);
+      //下拉
+      if (btstate == false) {
+        bt.removeClass("collapsed");
+        bt.attr("aria-expanded", "true");
+        bm.attr("aria-expanded", "true")
+        bm.fadeIn(700);
+        btstate = true;
+      }
+      else {
+        bt.addClass("collapsed");
+        bt.attr("aria-expanded", "false");
+        bm.removeClass("in");
+        bm.hide();
+        bm.attr("aria-expanded", "false");
+        btstate = false;
+      }
+    }
+  </script> 
+            </div>
+            <!----------- 移动端导航栏👆 ----------------->
+
+            <!--------------- pc端菜单栏👇 ---------------->
+            <div class="side"><head>
     <link rel="stylesheet" href="https://xiaoyao0720.github.io/sua17/media/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://xiaoyao0720.github.io/sua17/styles/main.css">
     
@@ -734,138 +899,11 @@ menulist.eq(i).show();
 }
 </script>
 <!--------------------- 菜单栏图标加载功能👆 -----------------------></div>
-                <!--------------- pc端菜单栏👆 ---------------->
-                <!----------- 移动端导航栏👇 ----------------->
-                <div class="mobilebar"><head>
-  <!-- 引入Bootstrap核心样式文件 -->
-  <link rel="stylesheet" href="https://xiaoyao0720.github.io/sua17/media/css/bootstrap.min.css">
-</head>
-<style>
-  .navmobile {
-    z-index: 15;
-    max-height: 40vh;
-    overflow-y: scroll;
-    overflow-x: hidden;
-  }
+            <!--------------- pc端菜单栏👆 ---------------->
 
-  @media screen and (max-width: 1200px) {
-    .navbar {
-      max-width: 100vw;
-    }
-  }
-
-  @media screen and (max-width:1200px) and (min-width: 768px) {
-    @media (min-width: 768px) {
-      .navbar-nav {
-        float: right;
-        margin: 0;
-      }
-    }
-  }
-
-  @media screen and (max-width:768px) {
-    .mbapspan {
-      padding: 0;
-    }
-  }
-</style>
-<div class="pjaxloading"  onclick="pjaxloadingClose()">
-  <div class="loadingbackground"></div>
-  <div id="loading">
-    <div class="loading">
-    </div>
-  </div>
-</div>
-<nav class="navbar navbar-inverse navbar-fixed-top navmobile">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barmenu"
-        aria-expanded="false" id="barbutton">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a data-pjax class="navbar-brand" href="https://xiaoyao0720.github.io/sua17">苏十七(๑•̀ㅂ•́)و✧&nbsp;&nbsp;|</a>
-      <span class="navbar-brand mbapspan"><i id="mbaplayer" class="fa fa-play-circle-o" aria-hidden="true"
-          style="font-size: 28px;top: 12px;position: absolute;" onclick="aplayerPlay();"></i></span>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="barmenu">
-      <ul class="nav navbar-nav">
-        
-        
-        <li>
-          <a data-pjax href="/">
-            首页
-          </a>
-        </li>
-        
-        
-        
-        <li>
-          <a data-pjax href="/archives">
-            归档
-          </a>
-        </li>
-        
-        
-        
-        <li>
-          <a data-pjax href="/post/about">
-            关于
-          </a>
-        </li>
-        
-        
-        
-        <li><a data-pjax href="https://xiaoyao0720.github.io/sua17/talk">说说</a></li>
-        
-          
-        <li><a data-pjax href="https://xiaoyao0720.github.io/sua17/friends">友链</a></li>
-
-        
-        </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-  </nav>
-
-
-  <!-- 引入jQuery核心js文件 -->
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
-  <script>
-    let btstate = false;
-    var bt = $("#barbutton");
-    var bm = $("#barmenu");
-    bt.click(function () {
-      dropdown();
-    })
-    function dropdown() {
-      console.log(btstate);
-      //下拉
-      if (btstate == false) {
-        bt.removeClass("collapsed");
-        bt.attr("aria-expanded", "true");
-        bm.attr("aria-expanded", "true")
-        bm.fadeIn(700);
-        btstate = true;
-      }
-      else {
-        bt.addClass("collapsed");
-        bt.attr("aria-expanded", "false");
-        bm.removeClass("in");
-        bm.hide();
-        bm.attr("aria-expanded", "false");
-        btstate = false;
-      }
-    }
-  </script> 
-                <!----------- 移动端导航栏👆 ----------------->
-                </div>
-                <!-- ----------------左侧菜单栏html 👇-------------------------------------->
-                
+            <!-- ----------------左侧菜单栏html 👇-------------------------------------->
+            
+            <div>
                 <div id="tab1" class="tab">
                     <div class="bars">
                         <span></span>
@@ -875,56 +913,156 @@ menulist.eq(i).show();
                     <div class="close"></div>
                 </div>
                 <div class="col-md-1 col-lg-3"></div>
-                <div id="main" class="col-xs-12 col-sm-12 col-md-12 col-lg-7">
-                    <body>
-    <div id="friendscontainermobile">
-        
-        
-        
-    </div>
+                <!-- main标签，pjax渲染时加载以下内容👇 -->
+                <div id="main" class="col-xs-12 col-sm-12 col-md-12 col-lg-7" style="padding:0;">
+                    <link rel="stylesheet" href="https://xiaoyao0720.github.io/sua17/media/css/font-awesome.css">
 
-    <div id="pcintroimg">
-        <div class="sea">
-            <p class="title">友人帐</p>
-            <span class="wave"></span>
-            <span class="wave"></span>
-            <span class="wave"></span>
+<body>
+    <div class="allcontent" id="postdetail">
+        <div class="postshow postpadding" style="padding-bottom: 0;">
+            
+            <div class="postdetailimg">
+                <img src="https://xiaoyao0720.github.io/sua17/post-images/2021060101.webp" class="postimage" style="cursor:auto">
+            </div>
+            <div class="postinfo-detail">
+                <div class="postdate"><i class="fa fa-calendar"></i>2021-06-01</div>
+                <div class="poststatus postdate"><i class="fa fa-clock-o"></i> 6 min read</div>
+                <div class="posttag">
+                    
+                    <a data-pjax href="https://xiaoyao0720.github.io/sua17/tag/gongwuyuan/" class="postlink">
+                        <i class="fa fa-tag"></i> 公务员必备
+                    </a>
+                    
+                    <a data-pjax href="https://xiaoyao0720.github.io/sua17/tag/honghuang/" class="postlink">
+                        <i class="fa fa-tag"></i> 洪荒之声
+                    </a>
+                    
+                </div>
+            </div>
+            
+        <div id="articlecontent">
+            <div id="texttitle" style="text-align: center">
+                <h2 id="ptitle">明星在南大校园拍戏遇冷，传递了正确的价值取向</h2>
+                <!-- id 将作为查询条件 -->
+                <div id="pl" style="display:none">https://xiaoyao0720.github.io/sua17/post/2021060101/</div>
+                <div id="rootaddr" style="display:none">https://xiaoyao0720.github.io/sua17</div>
+                
+            </div>
+            <div class="text ">
+                <p>导言：近日，一则“某剧组在南大校园取景，当红明星遭冷遇”的消息引发关注，舆论为南京大学学子们的“反常”表现点赞。如果这则新闻与营销造势无关，那么青年学生与娱乐明星之间的这份“疏离感”，倒给人更多思考和讨论的空间。</p>
+<!-- more -->
+<p>你拍你的戏我读我的书，这就对了</p>
+<p>事情本身并不值得“拍案惊奇”。据了解，南大鼓楼校区已不承担本科教学，加之疫情防控需要，人员本就不多。再者说，在非节假日，剧组进驻、明星造访对学校、学生多多少少会造成一些打扰，把这种打扰降到最低本属应该，对这种打扰报以冷淡甚至不悦也算自然反应。<br>
+从这个层面来说，任何剧组和明星在校园里的活动受到冷遇都不足为奇；不管多大的腕儿、多豪华的阵容，只要干的是和教学无关的事，也就难怪学校师生们不待见。<br>
+没有对比就没有“伤害”。如果剧组或者明星们对“南大冷遇”怀有不适感，是否因为他们在其他场合收获了太多不恰当、不冷静的“热捧”？某些明星前呼后拥的出场姿态、粉丝群体如痴如狂的追星表现、“饭圈文化”毫无节操的“膜拜”……和这些场景相比，南大校园里出现的这一幕确实有点反常的味道。可转念一想，这又何其正常：学校是教书育人的清净之地，读书学习是学子们的天职，难道希望大家放下书本一窝蜂去追星？<br>
+本次事件中还有一个细节耐人寻味：剧组方在大学里贴出告示，招聘群众演员每人每天75元，结果应者寥寥。<br>
+想来剧组方可能高估了明星们的光环和学生们的“演戏”热情，同时又严重低估了“打工人”的基本诉求值。有网民表示，75元也是一个“伤害性很大、侮辱性更大”的定价。资本的傲慢也罢，行业的弊端也好，能够请得起一干当红流量明星的剧组，对待群演如此“抠门”，怎么想也应该不是出于成本节约的考虑吧。<br>
+你拍你的戏，我读我的书。一校之内，两者之间本就是“井水不犯河水”的关系，各自安好、互不干扰是再正常不过的事情。<br>
+更值得讨论的话题是，在这样一个泛娱乐化的时代，青年们该追什么样的星？怎样去追星？是看脸追流量，还是看能力重人品？是只羡浮华还是脚踏实地？是随波逐流还是独持己见？是惦念杯水风波还是心怀国之大者？这些问号，理应在校园之外的地方得到更有力的回应、更深刻的思考。<br>
+话说回来，高校不是风雨不进的象牙塔，学子们也不可能“两耳不闻窗外事”，什么样的“明星”受欢迎、受礼遇，什么样的“明星”遭鄙夷、被群嘲，也能读出当今社会的潮流风向和当代青年的价值取向，愿这份“疏离感”不再让我们感到陌生和奇怪，而是亲切而宝贵。（via新华每日电讯）</p>
+<p>“明星在南大没被围观”为何成了新闻？</p>
+<p>舆论对此事之所以反应敏感，是因为此前出现过许多明星进校园引起围观的现象。甚至在一些人看来，当红的娱乐明星在大学被围观，才是真正有影响力的表现。事实上，此前，一些明星进入校园后，的确会引起年轻学子的“狂欢”，不论是出于追星的想法，还是看热闹的心态，年轻人很容易去“强势围观”娱乐明星们。<br>
+对大学生而言，求学阶段最主要的任务还是好好读书。能够让大学生仰慕的偶像，更应该是那些为社会作出突出贡献的杰出人才，或者本专业的优秀前辈们。仅仅凭借在娱乐圈的知名度与影响力，就能轻松吸引大量高校学生的目光，乃至令其为之“疯狂”，这才是反常的，才是不应该的。<br>
+我们还记得袁隆平院士走进湖南农业大学时引起学子热情欢迎的场面。袁隆平当时说：“我希望不是以长辈身份，而是作为朋友来和你们交流”，“同学们要做‘有心人’，随时注意捕捉思想的火花”。努力追求学问与思想的进步，这不仅是来自优秀前辈的谆谆教诲，也是如今大学生本来该有的状态。只是，在现实中，有不少大学生的价值观被泛娱乐化的风潮迷住了双眼，不知道到底该追随什么样的偶像和榜样。<br>
+当钟南山、李兰娟走进高校的时候，我们同样能看到学子热情的欢呼，以至于网上有人说“大学秒变追星现场”。这些为国为民、专业精湛的前辈，的确值得大学生敬佩。当一个人确立心中的偶像后，其价值观也会受之影响。作为当今的大学生，也应认真思考什么样的偶像才是真正值得自己崇拜的，而不是一味追随流行和风潮。<br>
+当然，这样说并不是全盘否定娱乐明星的价值，毕竟没有娱乐的生活状态也是乏味的。只是作为还在求学的高校学子，应该把主要的精力放在学习上，即便是追星，也不妨多一些理性视角与长远眼光。从这一点上来看，这次南大学子对当红娱乐明星的“冷淡”反应，让外界看到了更加理性的样子。希望更多年轻人可以从中获得些许启发，不辜负这一场难得的青春时光。（via中国青年报）</p>
+<p>流量明星在南大校园遇冷，这在充满了喧嚣和尖叫的娱乐圈算得上是一股清流了。在泛娱乐化的环境里，这种态度应该被提倡。毕竟，专心读书才是大学里最美的“风景”，才是当代大学生应有的样子。南大学子们用实际行动给那些疯狂追星的少男少女们做出了好的表率，也传递出了一种正确的价值取向：专注于学习，专注于自己的事业，远远比追星更重要。</p>
+<p>本文章摘抄自《洪荒之声》公众号，请大家多多关注本人转载。没有版权！<br>
+<img src="https://xiaoyao0720.github.io/sua17/post-images/1622537584729.webp" alt="" loading="lazy"></p>
+
+            </div>
+            <hr style="width: 80%;">
+            
+            <div class="postfooter">
+                <ul class="post-copyright">
+                    <li><strong>文章作者：</strong>苏十七</li>
+            <li><strong>原文链接：</strong>https://xiaoyao0720.github.io/sua17/post/2021060101/</li>
+            <li><strong>版权声明：</strong>本博客所有文章除特别声明外，均采用<i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA
+                许可协议。转载请注明出处！</li>
+            </ul>
+        </div>
+        
+            <div class="shareContainer">
+                <div class="share" style="height:30px;background: white;">
+                    <a class="qq" href=""><i><img class="shareicon"
+                                src="https://xiaoyao0720.github.io/sua17/media/images/qqs.png" alt=""></i></a>
+                    <a class="wechat" href=""><i><img class="shareicon"
+                                src="https://xiaoyao0720.github.io/sua17/media/images/wechats.png" alt=""></i></a>
+                    <a class="weibo" href=""><i><img class="shareicon"
+                                src="https://xiaoyao0720.github.io/sua17/media/images/weibos.png" alt=""></i></a>
+                    <a class="qzone" href=""><i><img class="shareicon"
+                                src="https://xiaoyao0720.github.io/sua17/media/images/qzones.png" alt=""></i></a>
+                    <a class="douban" href=""><i><img class="shareicon"
+                                src="https://xiaoyao0720.github.io/sua17/media/images/doubans.png" alt=""></i></a>
+                    <a class="facebook" href=""><i><img class="shareicon"
+                                src="https://xiaoyao0720.github.io/sua17/media/images/facebooks.png" alt=""></i></a>
+                    <a class="twitter" href=""><i><img class="shareicon"
+                                src="https://xiaoyao0720.github.io/sua17/media/images/twitter.png" alt=""></i></a>
+                </div>
+            </div>
+            
+        <div id="otherpost">
+            
+            
+            <a data-pjax class="next-post-pc" href="https://xiaoyao0720.github.io/sua17/post/hello-world/"  style="color: black;">
+                <div id="npcontainer">
+                    
+                    <img src="https://xiaoyao0720.github.io/sua17/post-images/hello-world.jpg" style="width: 100%;" class="opimg">
+                    
+                    <h4 class="optitle">欢迎光临我的小站</h4>
+                </div>
+            </a>
+            <div class="next-post">
+                下一篇 <a  data-pjax href="https://xiaoyao0720.github.io/sua17/post/hello-world/">欢迎光临我的小站</a>
+            </div>
+            
         </div>
     </div>
-
-    <div id="friendscontainer">
-        <div id="friendsrule">
-
-        </div>
-        
-        
-        
+    </div>
+    </div>
+    <!-- 弹窗 -->
+    <div id="myModal" class="modal">
+        <img class="modal-content" id="img01">
     </div>
 </body>
-
-
 <script>
-    var friendsrule = "<p>暂无提示</p><p>暂无提示</p>"
-    $("#friendsrule").html(friendsrule);
+    //文章阅读热度
+    var pl = $("#pl").html();
+    var rootaddr = $("#rootaddr").html();
+    pl = pl.replace(rootaddr, "");
+    $("#hotnum").attr('id', pl);
 </script>
-                    <div id="comment" class="comment" >
+                    <div class="toc-container">
+                        
+                    </div>
+                    <div class="tog">
+                        <div class="toggleContainer">
+                            <div class="toggle">
+                                <i class="fas fa-angle-double-up"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!---------------------------- 评论系统👇 ------------------------->
+                    <div id="comment" class="comment">
                         <div class="commentcontainer">
                             
                                 
                             
                         </div>
                     </div>
+                    <!---------------------------- 评论系统👆 ------------------------->
                 </div>
-                <div class="col-md-1 col-lg-1"></div>
+                <!-- main标签，pjax渲染时加载以上内容👆 -->
+                <div class="col-md-1 col-lg-2"></div>
                 <div id="bg">
                 </div>
             </div>
             <!-- ----------------左侧菜单栏html 👆-------------------------------------->
-            <!------------------ 顶部菜单栏html👇--------->
             
-        <!------------------ 顶部菜单栏html👆--------->
-        
-        <head>
+        </div>
+        <!-- aplayer播放器加载👇 -->
+            
+            <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
 </head>
 
@@ -986,35 +1124,44 @@ menulist.eq(i).show();
         }
     }
 </script>
-        
+            
+        <!-- aplayer播放器加载👆 -->
+    </div>
+    
 
-    </div>
-    
-    <div class="tog">
-        <div class="toggleContainer">
-            <div class="toggle">
-                <i class="fas fa-angle-double-up"></i>
-            </div>
-        </div>
-    </div>
-    <div id="bgchoice" style="display: none">default</div>
-    
-    <div id="bgurl" style="display:none">/media/images/bgimg.png</div>
-    
-    </div>
-    <div id="landlord">
-        <div class="message" style="opacity:0"></div>
-        <canvas id="live2d" width="240" height="250" class="live2d"></canvas>
-    </div>
-    <div id="domainname" style="display:none">https://xiaoyao0720.github.io/sua17</div>
+    <!-- 背景图加载方式👇 -->
+    <div id="bgchoice" style="display: none">default
+                </div>
+                
+                <div id="bgurl" style="display:none">/media/images/bgimg.png</div>
+                
+    <!-- 背景图加载方式👆 -->
 </body>
-</html>
 
-<!-------------------- live2d功能👇 --------------------------->
+<script>
+    //初始化
+    //更换twikoo头像
+    setTimeout(replaceAvatar,1000);
+    setTimeout(replaceAvatar,2000);
+    setTimeout(replaceAvatar,8000);
+    // --------为每张图片添加懒加载（lazyload）标签-->懒加载功能 👇------------
+    imglazyloadinit()
+    lazyload();
+    // ------代码高亮显示功能-------------
+    hljs.initHighlightingOnLoad();
+    //为文章内所有代码块添加代码复制功能 👇
+    codeinit();
+    if (shareChoice)
+        shareInit();
+    if (donateChoice)
+        donateInit();
+</script>
+
+<!------------------ 加载live2d模型功能（看板娘）👇 ---------------->
 
 <script type="text/javascript">
     var message_Path = '/live2d/'
-    var home_Path = document.getElementById("domainname").innerHTML+"/"; //此处修改为你的域名，必须带斜杠
+    var home_Path = document.getElementById("domainname").innerHTML + "/"; //此处修改为你的域名，必须带斜杠
 </script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/js/live2d.js"></script>
 <script type="text/javascript" src="https://xiaoyao0720.github.io/sua17/media/live2d/js/message.js"></script>
@@ -1022,22 +1169,61 @@ menulist.eq(i).show();
     loadlive2d("live2d", "https://xiaoyao0720.github.io/sua17/media/live2d/assets/tororo.model.json");
 </script>
 
-<!-------------------- live2d功能👆 --------------------------->
+<!------------------ 加载live2d模型功能（看板娘）👆 ---------------->
+
+
+<!----------------------- 返回顶部按钮功能👇 --------------------->
+<script>
+    $(function () {
+        $('.toggleContainer').click(function () {
+            $('html,body').animate({
+                scrollTop: '0px'
+            }, 800);
+        });
+        $(window).scroll(function () {
+            var st = $(window).scrollTop();
+            if (st > 30) {
+                $(".toggleContainer").fadeIn(400);
+            } else {
+                $(".toggleContainer").fadeOut(100);
+            }
+        });
+    });
+</script>
+<!----------------------- 返回顶部按钮功能👆 --------------------->
+
 
 <!------------ 加载全局背景图功能👇（开始时没有写好，这功能有点鸡肋/(ㄒoㄒ)/~~） -->
 <script>
-        var bgchoice=$('#bgchoice').html();
-        var bg = $('#bg');
-        var bgurl = document.getElementById("bgurl").innerHTML;
-        if(bgchoice=='default')
-            for (var i = 0; i < 3; i++)
-                bgurl = bgurl.replace("\\", "/");
-        bg.css("background", "url('" + bgurl + "')");
-
-        window.onload = function(){
-            aplayerbtnInit();
-        }
+    var bgchoice = $('#bgchoice').html();
+    var bg = $('#bg');
+    var bgurl = document.getElementById("bgurl").innerHTML;
+    if (bgchoice == 'default')
+        for (var i = 0; i < 3; i++)
+            bgurl = bgurl.replace("\\", "/");
+    bg.css("background", "url('" + bgurl + "')");
 </script>
 <!------------ 加载全局背景图功能👆（开始时没有写好，这功能有点鸡肋/(ㄒoㄒ)/~~） -->
 
-    <script src="https://xiaoyao0720.github.io/sua17/media/js/index.js"></script>
+
+
+
+<script src="https://xiaoyao0720.github.io/sua17/media/js/index.js"></script>
+
+
+<script>
+    //加载后的事件同步（阅读量、移动端评论等
+    window.onload = function () {
+        getHotnum();
+        var sharepc = $(".share").eq(0).html();
+        $(".share").eq(1).html(sharepc);   //插件只会寻找一个分享标签渲染，所以需要手动添加到移动端
+        aplayerbtnInit();
+        $(".hljs").css({
+            "padding": "20px"
+        })
+    }
+</script>
+
+<!-- <script src="https://xiaoyao0720.github.io/sua17/media/js/av-min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/leancloud-storage@3.13.0/dist/av-min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/leancloud-storage@4.6.1/dist/av-live-query-min.js"></script> -->
